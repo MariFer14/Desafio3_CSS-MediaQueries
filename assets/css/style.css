@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  grid-area: header;
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.main {
+  grid-area: main;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-areas:
+    "aside header"
+    "aside main"
+    "footer main";
+}
+
+.grid-box {
+  border: 1px solid black;
+}
+
+@media (max-width: 992px) /*Small*/ {
+  .container {
+    grid-template-columns: 200px auto;
+    grid-template-areas:
+      "aside aside"
+      "header main"
+      "footer footer";
+  }
+}
+
+@media (max-width: 576px) /*Extra small*/ {
+  .container {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "aside"
+      "header"
+      "main"
+      "footer";
+  }
+}
