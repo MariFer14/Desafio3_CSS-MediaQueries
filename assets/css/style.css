@@ -9,11 +9,10 @@
 body {
   font-family: "Montserrat", sans-serif;
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "header"
     "main"
-    "footer"
-  ;
+    "footer";
   min-height: 100vh;
 }
 
@@ -23,47 +22,120 @@ body {
   background-color: #74b72e;
 }
 
-.header-content{
+.header-content {
   display: flex;
   justify-content: space-between;
 }
 
-.logo{
+.logo {
   display: flex;
   justify-content: flex-start;
   padding: 20px;
 }
 
-.logo i{
+.logo i {
   color: #ffffff;
   margin-right: 10px;
   margin-top: 5px;
 }
 
-.logo h2{
+.logo h2 {
   color: #ffffff;
 }
 
-.menu-icono{
+.menu-icono {
   color: #ffffff;
   font-size: 25px;
   padding: 20px 30px 20px 20px;
 }
 
-label .menu-icono{
+label .menu-icono {
   cursor: pointer;
-
 }
 
-.navbar{
+.navbar {
   display: none;
 }
-
-
 
 .main {
   grid-area: main;
   border: 1px solid black;
+}
+
+.filter-content {
+  background-color: #ffffcc;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.filter-content p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.filter-content select {
+  border: 1px solid #74b72e;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  margin: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  margin-bottom: 15px;
+}
+
+.card-content button {
+  color: #ffffcc;
+  font-size: 14px;
+  background-color: #74b72e;
+  border: none;
+  padding: 12px 27px;
+}
+
+.paginacion ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.paginacion ul li {
+  list-style: none;
+  border: 1px solid #74b72e;
+  padding: 8px;
+  background-color: #ffffcc;
+}
+
+.paginacion ul li a {
+  text-decoration: none;
+  color: #74b72e;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.paginacion ul li a.num {
+  padding: 0 8px;
 }
 
 .footer {
@@ -71,36 +143,27 @@ label .menu-icono{
   border: 1px solid black;
 }
 
-@media (min-width: 576px){
-
-  .navbar{
+@media (min-width: 576px) {
+  .navbar {
     display: initial;
   }
 
-  label .menu-icono{
+  label .menu-icono {
     display: none;
-  
   }
 
-  .navbar ul{
+  .navbar ul {
     display: flex;
     padding: 20px 120px 20px 20px;
   }
-  
-  .navbar ul li{
+
+  .navbar ul li {
     list-style: none;
     margin-right: 10px;
   }
-  
-  .navbar ul li a{
+
+  .navbar ul li a {
     text-decoration: none;
     color: #ffffff;
   }
-  
 }
-
-
-
-
-
-
