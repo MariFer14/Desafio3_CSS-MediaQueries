@@ -13,12 +13,10 @@ body {
     "header"
     "main"
     "footer";
-  min-height: 100vh;
 }
 
 .header {
   grid-area: header;
-  border: 1px solid black;
   background-color: #74b72e;
 }
 
@@ -59,10 +57,10 @@ label .menu-icono {
 
 .main {
   grid-area: main;
-  border: 1px solid black;
 }
 
 .filter-content {
+  width: 100%;
   background-color: #ffffcc;
   padding: 20px 50px;
   text-align: center;
@@ -82,7 +80,7 @@ label .menu-icono {
 
 .card {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-  margin: 25px;
+  margin: 25px 35px;
   border-radius: 10px;
   text-align: center;
 }
@@ -97,7 +95,6 @@ label .menu-icono {
 }
 
 .card-content h3 {
-  font-size: 22px;
   margin-bottom: 10px;
 }
 
@@ -120,6 +117,14 @@ label .menu-icono {
   margin-bottom: 20px;
 }
 
+.paginacion ul .selec{
+  background-color: #287233;
+}
+
+.paginacion ul .selec a{
+  color: #ffffcc;
+}
+
 .paginacion ul li {
   list-style: none;
   border: 1px solid #74b72e;
@@ -138,35 +143,23 @@ label .menu-icono {
   padding: 0 8px;
 }
 
+
 .footer {
   grid-area: footer;
-  background-color: #74b72e;
-  border: 1px solid black;
+  background-color: #287233;
   text-align: center;
-  padding: 25px 0 0 0;
+  padding: 25px;
 }
 
 footer i {
   font-size: 20px;
-  color:#ffffcc;
+  color: #ffffcc;
   margin-bottom: 10px;
   margin-right: 6px;
 }
 
-footer .txt{
-  display: flex;
-  justify-content: center;
-}
-
-footer .txt p{
+footer p {
   color: #ffffff;
-}
-
-footer .txt i{
-  font-size: 14px;
-  color: #ffffff;
-  margin-top: 4px;
-  margin-right: 5px;
 }
 
 @media (min-width: 576px) {
@@ -180,7 +173,8 @@ footer .txt i{
 
   .navbar ul {
     display: flex;
-    padding: 20px 120px 20px 20px;
+    padding: 20px 30px 20px 20px;
+    margin-top: 5px;
   }
 
   .navbar ul li {
@@ -191,5 +185,71 @@ footer .txt i{
   .navbar ul li a {
     text-decoration: none;
     color: #ffffff;
+  }
+
+  .navbar ul li a:hover {
+    color: #ffffcc;
+  }
+
+  .main {
+    display: flex;
+  }
+
+  .filter-content{
+    width: 500px;
+  }
+
+  .grid-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer {
+    padding: 25px;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  body {
+    grid-template-areas:
+      "header main main"
+      "footer main main";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 100px auto auto;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+  
+  .logo{
+    justify-content: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    margin-top: -20px;
+  }
+
+  .navbar ul li{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .filter-content{
+    width: 100%;
+  }
+
+  .grid-content {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .footer {
+    padding: 25px;
   }
 }
