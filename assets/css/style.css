@@ -8,58 +8,99 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+  ;
+  min-height: 100vh;
 }
 
 .header {
   grid-area: header;
+  border: 1px solid black;
+  background-color: #74b72e;
 }
 
-.navbar {
-  grid-area: navbar;
+.header-content{
+  display: flex;
+  justify-content: space-between;
 }
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.logo i{
+  color: #ffffff;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.logo h2{
+  color: #ffffff;
+}
+
+.menu-icono{
+  color: #ffffff;
+  font-size: 25px;
+  padding: 20px 30px 20px 20px;
+}
+
+label .menu-icono{
+  cursor: pointer;
+
+}
+
+.navbar{
+  display: none;
+}
+
+
 
 .main {
   grid-area: main;
-}
-
-.aside {
-  grid-area: aside;
+  border: 1px solid black;
 }
 
 .footer {
   grid-area: footer;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 300px auto;
-  grid-template-areas:
-    "aside header"
-    "aside main"
-    "footer main";
-}
-
-.grid-box {
   border: 1px solid black;
 }
 
-@media (max-width: 992px) /*Small*/ {
-  .container {
-    grid-template-columns: 200px auto;
-    grid-template-areas:
-      "aside aside"
-      "header main"
-      "footer footer";
+@media (min-width: 576px){
+
+  .navbar{
+    display: initial;
   }
+
+  label .menu-icono{
+    display: none;
+  
+  }
+
+  .navbar ul{
+    display: flex;
+    padding: 20px 120px 20px 20px;
+  }
+  
+  .navbar ul li{
+    list-style: none;
+    margin-right: 10px;
+  }
+  
+  .navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
 }
 
-@media (max-width: 576px) /*Extra small*/ {
-  .container {
-    grid-template-columns: auto;
-    grid-template-areas:
-      "aside"
-      "header"
-      "main"
-      "footer";
-  }
-}
+
+
+
+
+
