@@ -140,7 +140,33 @@ label .menu-icono {
 
 .footer {
   grid-area: footer;
+  background-color: #74b72e;
   border: 1px solid black;
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+
+footer i {
+  font-size: 20px;
+  color:#ffffcc;
+  margin-bottom: 10px;
+  margin-right: 6px;
+}
+
+footer .txt{
+  display: flex;
+  justify-content: center;
+}
+
+footer .txt p{
+  color: #ffffff;
+}
+
+footer .txt i{
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 4px;
+  margin-right: 5px;
 }
 
 @media (min-width: 576px) {
