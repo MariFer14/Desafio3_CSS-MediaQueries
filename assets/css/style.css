@@ -110,6 +110,12 @@ label .menu-icono {
   padding: 12px 27px;
 }
 
+.card-content button:hover{
+  cursor: pointer;
+  background-color: #ffffcc;
+  color: #74b72e;
+}
+
 .paginacion ul {
   display: flex;
   justify-content: center;
