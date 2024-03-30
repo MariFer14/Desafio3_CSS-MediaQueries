@@ -1,4 +1,4 @@
-# Desafio3_CSS-MediaQueries
+# NatureStore-Desafio3_CSS-MediaQueries
 
 Este Nature Store es un trabajo de índole académico, del módulo CSS Avanzado en mi paso por la Academia Desafío Latam.
 
