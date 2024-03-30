@@ -1,6 +1,6 @@
 # Desafio3_CSS-MediaQueries
 
-Este Electric Car Store es un trabajo de índole académico, del módulo CSS Avanzado en mi paso por la Academia Desafío Latam.
+Este Nature Store es un trabajo de índole académico, del módulo CSS Avanzado en mi paso por la Academia Desafío Latam.
 
 ## Descripción 
 
